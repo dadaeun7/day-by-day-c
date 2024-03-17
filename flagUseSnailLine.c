@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void){
+void flagUseSnailLine(void){
 
     int test[5][5] = {
         {0,0,0,0,0},

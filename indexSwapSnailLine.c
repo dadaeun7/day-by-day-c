@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void){
+void indexSwapSnailLine(void){
 
     int test[5][5] = {
         {0,0,0,0,0},
