@@ -24,17 +24,17 @@ int main(void){
 
     for(int i = 0; i < row; i++){
 
-			// true 가 나오면 왼쪽 부터 : false 가 나오면 오른쪽 부터
+	// true 가 나오면 왼쪽 부터 : false 가 나오면 오른쪽 부터
         start = (i + 1) % 2 ? 1 : index;
         
         for(int j = 0 ; j < column; j++){
-						// 열의 순서가 들어가는 rotate 
+	// 열의 순서가 들어가는 rotate 
             rotate = abs(start - (j+1));
             test[i][rotate] = (i * column) + 1 + j; 
         }
     }
 
-		// test에 각 교차 달팽이 순서로 넣은 후 출력
+// test에 각 교차 달팽이 순서로 넣은 후 출력
     for(int i = 0; i < row; i++){
         for(int j = 0; j < column; j++){
             printf("%d\t", test[i][j]);
